@@ -7,3 +7,6 @@ scikit-learn
 beautifulsoup4
 requests
 openpyxl
+openai
+typer[all]
+rich
