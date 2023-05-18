@@ -10,7 +10,6 @@ import pickle
 from sklearn.cluster import KMeans
 
 
-
 def load_model(path) -> KMeans:
     with open(path, "rb") as f:
         return pickle.load(f)
