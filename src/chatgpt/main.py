@@ -23,10 +23,11 @@ def load_environs(filename):
             os.environ[key] = value
 
 
-load_environs(".env")
-
 
 def main():
+    
+    load_environs(".env")
+
     openai.api_key = os.environ["OPENAI_KEY"]
 
     print("💬 [bold green]ChatGPT API en Python[/bold green]")
@@ -38,7 +39,7 @@ def main():
     print(table)
 
     # Contexto del asistente
-    context = {"role": "system", "content": "Eres un asistente muy útil."}
+    context = {"role": "system", "content": "You are the best AI assistant to cowork with."}
     messages = [context]
 
     while True:

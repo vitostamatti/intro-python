@@ -42,6 +42,7 @@ async def index():
     response = RedirectResponse(url='/docs')
     return response
 
+
 @app.post("/predict", summary="run predictions")
 def read_item(req:PredictionRequest) -> PredictionResponse:
     """Returns the corresponding cluster of the given user info
