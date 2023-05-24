@@ -32,6 +32,8 @@ def main():
 
     print("💬 [bold green]ChatGPT API en Python[/bold green]")
 
+
+
     table = Table("Command", "Description")
     table.add_row("exit", "Exit application")
     table.add_row("new", "Create new conversation")
